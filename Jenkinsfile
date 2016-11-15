@@ -16,7 +16,5 @@ node {
    sh "${mvnHome}/bin/mvn clean install"
 
 
-
-
   // Do something
 }
