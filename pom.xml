@@ -3,7 +3,7 @@
   <groupId>com.companyname.bank</groupId>
   <artifactId>consumerBanking</artifactId>
   <packaging>jar</packaging>
-  <version>1.4-SNAPSHOT</version>
+  <version>1.4</version>
   <name>consumerBanking</name>
   <url>http://maven.apache.org</url>
 
