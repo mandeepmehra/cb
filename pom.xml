@@ -3,7 +3,7 @@
   <groupId>com.companyname.bank</groupId>
   <artifactId>consumerBanking</artifactId>
   <packaging>jar</packaging>
-  <version>1.4</version>
+  <version>1.5-SNAPSHOT</version>
   <name>consumerBanking</name>
   <url>http://maven.apache.org</url>
 
@@ -15,6 +15,12 @@
   <tag>HEAD</tag>
   </scm>
 
+<distributionManagement>
+   <snapshotRepository>
+      <id>nexus-snapshots</id>
+      <url>http://localhost:8081/nexus/content/repositories/snapshots</url>
+   </snapshotRepository>
+</distributionManagement>
 
   <dependencies>
     <dependency>
