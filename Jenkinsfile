@@ -5,6 +5,8 @@ node {
    // Checkout code from repository
    checkout scm
 
+   
+   stage 'Build'
    // Get the maven tool.
    // ** NOTE: This 'M3' maven tool must be configured
    // **       in the global configuration.
