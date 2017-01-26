@@ -15,6 +15,7 @@ node {
    sh "${mvnHome}/bin/mvn clean install"
 
    stage 'Deploy'
-   
+   input id: 'DEPLOY', message: 'Proceed or Abort ?', submitterParameter: 'APPROVER'
+
   // Do something
 }
