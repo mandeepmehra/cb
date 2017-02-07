@@ -16,7 +16,7 @@ node {
 
    stage 'Deploy'
    
-   xlrCreateRelease serverCredentials: 'xlrelease', startRelease: true, template: 'Test', variables: [[propertyName: 'buildUrl', propertyValue: '${BUILD_URL}']], version: 'Release for $BUILD_TAG'
+   xlrCreateRelease serverCredentials: 'XLRLOCAL', startRelease: true, template: 'Test', variables: [[propertyName: 'buildUrl', propertyValue: '${BUILD_URL}']], version: 'Release for $BUILD_TAG'
    
    sh 'export'
    //input id: 'DEPLOY', message: 'Proceed for deployment ?', submitter: 'xlrelease'
