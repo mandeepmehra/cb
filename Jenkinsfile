@@ -14,12 +14,12 @@ node {
    // Run the maven build
    sh "${mvnHome}/bin/mvn clean install"
 
-   milestone 'Completed Build'
+   milestone 1
    
    stage 'Create Release'
    xlrCreateRelease serverCredentials: 'XLRELEASE_LOCAL', startRelease: true, template: 'ES-Dev/Test', variables: [[propertyName: 'buildUri', propertyValue: '$BUILD_URL']], version: 'Release for $BUILD_TAG'
    
-   milestone 'Completed Release'
+   milestone 2
    
    stage 'Wait for Deploy'
    input id: 'DEPLOY', message: 'Proceed for deployment ?', submitter: 'xlrelease'
