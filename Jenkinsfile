@@ -14,7 +14,13 @@ node {
    // Run the maven build
    sh "${mvnHome}/bin/mvn clean install"
 
-   step([$class: 'ClaimPublisher']) 
+  try {
+  echo "boum"  
+  sh "mvn is-not-in-PATH"
+} catch (err) {
+  currentBuild.result = hudson.model.Result.FAILURE
+  step([$class: 'ClaimPublisher'])   
+}
    
    milestone 1
    
