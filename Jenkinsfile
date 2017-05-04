@@ -14,6 +14,8 @@ node {
    // Run the maven build
    sh "${mvnHome}/bin/mvn clean install"
 
+   step([$class: 'ClaimPublisher']) 
+   
    milestone 1
    
    stage 'Create Release'
