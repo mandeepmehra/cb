@@ -14,7 +14,8 @@ node {
    // Run the maven build
    sh "${mvnHome}/bin/mvn clean install"
 
-  try {
+ /*
+   try {
   echo "boum"  
   sh "mvn is-not-in-PATH"
 } catch (err) {
@@ -33,4 +34,5 @@ node {
    input id: 'DEPLOY', message: 'Proceed for deployment ?', submitter: 'xlrelease'
 
   // Do something
+  */
 }
