@@ -38,7 +38,7 @@ pipeline {
                     }"""
                 def buildInfo = server.upload(uploadSpec)
                 server.publishBuildInfo buildInfo
-
+                echo buildInfo.name
                 def promotionConfig = [
                     // Mandatory parameters
                     'buildName'          : buildInfo.name,
