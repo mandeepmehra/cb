@@ -32,19 +32,19 @@ pipeline {
                     "files": [
                         {
                         "pattern": "target/*.jar",
-                        "target": "libs-snapshot-local/petclinic/"
+                        "target": "libs-snapshot-local/petclinic/${BUILD_NUMBER}/binary"
                         },
                         {
                         "pattern": "target/**/*.class",
-                        "target": "libs-snapshot-local/petclinic/classes/"
+                        "target": "libs-snapshot-local/petclinic/${BUILD_NUMBER}/classes/"
                         },
                         {
                         "pattern": "target/**/*.xml",
-                        "target": "libs-snapshot-local/petclinic/xmls/"
+                        "target": "libs-snapshot-local/petclinic/${BUILD_NUMBER}/xmls/"
                         },
                         {
                         "pattern": "target/**/*.lst",
-                        "target": "libs-snapshot-local/petclinic/lst/"
+                        "target": "libs-snapshot-local/petclinic/${BUILD_NUMBER}/lst/"
                         }
                     ]
                     }"""
