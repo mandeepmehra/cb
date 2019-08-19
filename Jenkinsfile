@@ -43,11 +43,11 @@ pipeline {
                     // Mandatory parameters
                     'buildName'          : buildInfo.name,
                     'buildNumber'        : buildInfo.number,
-                    'targetRepo'         : 'libs-prod-ready-local',
+                    'targetRepo'         : 'libs-release-local',
                 
                     // Optional parameters
                     'comment'            : 'this is the promotion comment',
-                    'sourceRepo'         : 'libs-staging-local',
+                    'sourceRepo'         : 'libs-snapshot',
                     'status'             : 'Released',
                     'includeDependencies': true,
                     'copy'               : true,
