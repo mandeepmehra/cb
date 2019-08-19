@@ -33,6 +33,10 @@ pipeline {
                         {
                         "pattern": "target/*.jar",
                         "target": "libs-snapshot-local/petclinic/"
+                        },
+                        {
+                        "pattern": "target/(*)/(*).class",
+                        "target": "libs-snapshot-local/petclinic/classes"
                         }
                     ]
                     }"""
