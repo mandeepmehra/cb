@@ -24,5 +24,19 @@ pipeline {
                 sh 'mvn clean install'
             }
         }
+       stage('Upload') {
+          steps {
+             script{
+                def uploadSpec = """{
+  "files": [
+    {
+      "pattern": "target/*.jar",
+      "target": "libs-snapshot-local/petclinic/"
+    }
+ ]
+}"""
+server.upload(uploadSpec)
+          }
+       }
     }
 }
