@@ -42,7 +42,7 @@ pipeline {
                 def promotionConfig = [
                     // Mandatory parameters
                     'buildName'          : buildInfo.name,
-                    'buildNumber'        : buildInfo.number,
+                    'buildNumber'        : 10,
                     'targetRepo'         : 'libs-release-local',
                 
                     // Optional parameters
