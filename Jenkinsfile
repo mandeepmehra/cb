@@ -41,7 +41,7 @@ pipeline {
                 echo buildInfo.name
                 def promotionConfig = [
                     // Mandatory parameters
-                    'buildName'          : buildInfo.name,
+                    'buildName'          : 'cb::master',
                     'buildNumber'        : 10,
                     'targetRepo'         : 'libs-release-local',
                 
