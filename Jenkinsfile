@@ -32,7 +32,7 @@ pipeline {
                     "files": [
                         {
                         "pattern": "target/*.jar",
-                        "target": "DM-local/petclinic/${BUILD_NUMBER}/binary"
+                        "target": "DM-local/petclinic/${BUILD_NUMBER}/binary/"
                         },
                         {
                         "pattern": "target/**/*.class",
