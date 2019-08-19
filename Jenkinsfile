@@ -32,19 +32,19 @@ pipeline {
                     "files": [
                         {
                         "pattern": "target/*.jar",
-                        "target": "libs-snapshot-local/petclinic/${BUILD_NUMBER}/binary"
+                        "target": "DM-local/petclinic/${BUILD_NUMBER}/binary"
                         },
                         {
                         "pattern": "target/**/*.class",
-                        "target": "libs-snapshot-local/petclinic/${BUILD_NUMBER}/classes/"
+                        "target": "DM-local/petclinic/${BUILD_NUMBER}/classes/"
                         },
                         {
                         "pattern": "target/**/*.xml",
-                        "target": "libs-snapshot-local/petclinic/${BUILD_NUMBER}/xmls/"
+                        "target": "DM-local/petclinic/${BUILD_NUMBER}/xmls/"
                         },
                         {
                         "pattern": "target/**/*.lst",
-                        "target": "libs-snapshot-local/petclinic/${BUILD_NUMBER}/lst/"
+                        "target": "DM-local/petclinic/${BUILD_NUMBER}/lst/"
                         }
                     ]
                     }"""
@@ -55,14 +55,14 @@ pipeline {
                     // Mandatory parameters
                     'buildName'          : buildInfo.name,
                     'buildNumber'        : buildInfo.number,
-                    'targetRepo'         : 'libs-release-local',
+                    'targetRepo'         : 'DM-public',
                 
                     // Optional parameters
                     'comment'            : 'this is the promotion comment',
-                    'sourceRepo'         : 'libs-snapshot',
+                    'sourceRepo'         : 'DM-local',
                     'status'             : 'Released',
                     'includeDependencies': true,
-                    'copy'               : true,
+                    'copy'               : false,
                     // 'failFast' is true by default.
                     // Set it to false, if you don't want the promotion to abort upon receiving the first error.
                     'failFast'           : true
