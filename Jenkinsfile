@@ -36,15 +36,15 @@ pipeline {
                         },
                         {
                         "pattern": "target/**/*.class",
-                        "target": "libs-snapshot-local/petclinic/classes"
+                        "target": "libs-snapshot-local/petclinic/classes/"
                         },
                         {
                         "pattern": "target/**/*.xml",
-                        "target": "libs-snapshot-local/petclinic/xmls"
+                        "target": "libs-snapshot-local/petclinic/xmls/"
                         },
                         {
                         "pattern": "target/**/*.lst",
-                        "target": "libs-snapshot-local/petclinic/lst"
+                        "target": "libs-snapshot-local/petclinic/lst/"
                         }
                     ]
                     }"""
