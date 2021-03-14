@@ -11,8 +11,7 @@ targetCompatibility = 1.5
 
 
 repositories {
-        
-     maven { url "http://localhost:8081/repository/maven-public"  }
+     maven { url "http://localhost:8081/repository/maven-public"}
 }
 dependencies {
 
