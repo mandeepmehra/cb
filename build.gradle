@@ -14,7 +14,7 @@ targetCompatibility = 1.5
 
 repositories {
         
-     maven { url "http://localhost:8081/repository/maven-public" }
+     maven { url "http://localhost:8081/repository/maven-public"  }
 }
 dependencies {
     testCompile group: 'junit', name: 'junit', version:'3.8.1'
