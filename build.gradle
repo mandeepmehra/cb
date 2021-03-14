@@ -1,7 +1,6 @@
 apply plugin: 'java'
 apply plugin: 'maven'
 
-
 group = 'com.companyname.bank'
 version = '1.10-SNAPSHOT'
 
