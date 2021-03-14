@@ -1,10 +1,17 @@
 pipeline {
    agent any
-   tools { 
+    stages {
+       stage ('Initialize') {
+            steps {
+                sh env
+            }
+        }
+    }   
+/*   tools { 
         maven 'mvn' 
         jdk 'jdk8' 
     }
-   
+  
     stages {
        stage ('Initialize') {
             steps {
@@ -75,4 +82,5 @@ pipeline {
           }
        }
     }
+    */
 }
